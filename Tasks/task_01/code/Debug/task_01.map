@@ -530,18 +530,18 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_line    0x00000000000003f4      0x4f2 ./Core/Src/system_stm32f4xx.o
  .debug_line    0x00000000000008e6       0x88 ./Core/Startup/startup_stm32f401ccfx.o
 
-.debug_str      0x0000000000000000    0x500fd
+.debug_str      0x0000000000000000    0x5014b
  .debug_str     0x0000000000000000     0x37d0 ./Core/Src/GPIO.o
                                        0x37f0 (size before relaxing)
  .debug_str     0x00000000000037d0       0x6a ./Core/Src/INT.o
                                        0x35cb (size before relaxing)
- .debug_str     0x000000000000383a       0x9f ./Core/Src/TIMER.o
-                                       0x3611 (size before relaxing)
- .debug_str     0x00000000000038d9       0x2f ./Core/Src/main.o
+ .debug_str     0x000000000000383a       0xed ./Core/Src/TIMER.o
+                                       0x363e (size before relaxing)
+ .debug_str     0x0000000000003927       0x2f ./Core/Src/main.o
                                        0x382e (size before relaxing)
- .debug_str     0x0000000000003908    0x4c7bf ./Core/Src/system_stm32f4xx.o
+ .debug_str     0x0000000000003956    0x4c7bf ./Core/Src/system_stm32f4xx.o
                                       0x4f6ba (size before relaxing)
- .debug_str     0x00000000000500c7       0x36 ./Core/Startup/startup_stm32f401ccfx.o
+ .debug_str     0x0000000000050115       0x36 ./Core/Startup/startup_stm32f401ccfx.o
                                          0x52 (size before relaxing)
 
 .comment        0x0000000000000000       0x53
