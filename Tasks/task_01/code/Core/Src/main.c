@@ -26,21 +26,28 @@ TIM_Start();	/* enable timer interrupt */
 
   while (1) {
 
-
+	  	  /*loop forever*/
 	  }
 
   return 0;
 }
 
+
+
 void TIM2_IRQHandler(void){
 
-	if (TIM_REG(TIM2,TIMx_CR1) & (0x01 << 0)){
+	/*Timer 2 interrupt service routine*/
+
+	/* check the update interrupt flag*/
+	if (TIM_REG(TIM2,TIMx_SR) & (0x01 << 0)){
 
 		toggle = toggle ^ 1;
-		GPIO_WritePin(A,0,toggle);
+		GPIO_WritePin(A,0,toggle);		/*toggle the pin*/
 
+
+		TIM_REG(TIM2,TIMx_SR) &= ~(0x01 << 0);	/*clear the update interrupt flag*/
 	}
 
-	TIM_REG(TIM2,TIMx_SR) &= ~(0x01 << 0);
+
 }
 
