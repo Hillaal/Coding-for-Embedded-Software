@@ -1,0 +1,2 @@
+ds1307.c:16:6:Time_ReadData	24	static
+ds1307.c:24:6:Time_ManageDataRead	8	static
